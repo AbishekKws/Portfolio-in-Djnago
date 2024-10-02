@@ -1,0 +1,520 @@
+[
+    {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "MyProject.models",
+        "description": "MyProject.models",
+        "isExtraImport": true,
+        "detail": "MyProject.models",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "MyProject.models",
+        "description": "MyProject.models",
+        "isExtraImport": true,
+        "detail": "MyProject.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "MyProject",
+        "description": "MyProject",
+        "isExtraImport": true,
+        "detail": "MyProject",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyProject.migrations.0001_initial",
+        "description": "MyProject.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Project',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=200)),",
+        "detail": "MyProject.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyProject.migrations.0002_remove_project_image_url_project_mage",
+        "description": "MyProject.migrations.0002_remove_project_image_url_project_mage",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('MyProject', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='project',\n            name='image_url',\n        ),\n        migrations.AddField(",
+        "detail": "MyProject.migrations.0002_remove_project_image_url_project_mage",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectAdmin",
+        "kind": 6,
+        "importPath": "MyProject.admin",
+        "description": "MyProject.admin",
+        "peekOfCode": "class ProjectAdmin(admin.ModelAdmin):\n    list_display = ('title',)\nadmin.site.register(Project, ProjectAdmin)",
+        "detail": "MyProject.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MyprojectConfig",
+        "kind": 6,
+        "importPath": "MyProject.apps",
+        "description": "MyProject.apps",
+        "peekOfCode": "class MyprojectConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'MyProject'",
+        "detail": "MyProject.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "kind": 6,
+        "importPath": "MyProject.models",
+        "description": "MyProject.models",
+        "peekOfCode": "class Project(models.Model):\n    title = models.CharField(max_length=200)\n    description = models.TextField()\n    mage = models.ImageField(upload_to='Project/images', null=True, blank=True)\n    link = models.URLField()\n    def __str__(self):\n        return self.title",
+        "detail": "MyProject.models",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "portfolio.asgi",
+        "description": "portfolio.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "portfolio.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-4^(j36*rc@+iob=*of-63a^$1l)7(rdl=y5f=isee7g$jf4a+h'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-4^(j36*rc@+iob=*of-63a^$1l)7(rdl=y5f=isee7g$jf4a+h'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'MyProject',",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'MyProject',\n]\nMIDDLEWARE = [",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'portfolio.urls'",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "ROOT_URLCONF = 'portfolio.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR, \"Templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR, \"Templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'portfolio.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR / \"static\"]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "portfolio.settings",
+        "description": "portfolio.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "portfolio.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "portfolio.urls",
+        "description": "portfolio.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',views.index, name='index'),\n    path('about/', views.about, name='about'),\n    path('services/', views.services, name='services'),\n    path('skill/', views.skill, name='skill'),\n    path('projects/', views.projects_view, name='projects'),\n    path('project/<int:project_id>/', views.project_detail, name='project_detail'),\n]\nif settings.DEBUG == True:",
+        "detail": "portfolio.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def index(request):\n    return render(request, 'Frontend/index.html')\ndef about(request):\n    return render(request, 'Frontend/about.html')\ndef services(request):\n    return render(request, 'Frontend/services.html')\ndef skill(request):\n    return render(request, 'Frontend/skill.html')\ndef projects_view(request):\n    projects = Project.objects.all()  # Fetch all projects from the database",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def about(request):\n    return render(request, 'Frontend/about.html')\ndef services(request):\n    return render(request, 'Frontend/services.html')\ndef skill(request):\n    return render(request, 'Frontend/skill.html')\ndef projects_view(request):\n    projects = Project.objects.all()  # Fetch all projects from the database\n    # Check if there are no projects and add a default project\n    if not projects:",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def services(request):\n    return render(request, 'Frontend/services.html')\ndef skill(request):\n    return render(request, 'Frontend/skill.html')\ndef projects_view(request):\n    projects = Project.objects.all()  # Fetch all projects from the database\n    # Check if there are no projects and add a default project\n    if not projects:\n        projects = [\n            {",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "skill",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def skill(request):\n    return render(request, 'Frontend/skill.html')\ndef projects_view(request):\n    projects = Project.objects.all()  # Fetch all projects from the database\n    # Check if there are no projects and add a default project\n    if not projects:\n        projects = [\n            {\n                'title': 'Default Project Title',\n                'description': 'This is a dummy project description. Please add real projects from the admin panel.',",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "projects_view",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def projects_view(request):\n    projects = Project.objects.all()  # Fetch all projects from the database\n    # Check if there are no projects and add a default project\n    if not projects:\n        projects = [\n            {\n                'title': 'Default Project Title',\n                'description': 'This is a dummy project description. Please add real projects from the admin panel.',\n                'image': 'https://via.placeholder.com/150',  # Default image URL\n                'link': '#'",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "project_detail",
+        "kind": 2,
+        "importPath": "portfolio.views",
+        "description": "portfolio.views",
+        "peekOfCode": "def project_detail(request, project_id):\n    project = get_object_or_404(Project, id=project_id)\n    return render(request, 'frontend/project_detail.html', {'project': project})",
+        "detail": "portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "portfolio.wsgi",
+        "description": "portfolio.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "portfolio.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

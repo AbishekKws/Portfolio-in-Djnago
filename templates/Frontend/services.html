@@ -1,0 +1,112 @@
+{% extends "frontend/layout/base.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block style %}
+.services-section {
+    background: linear-gradient(to right, #0047ab, #824ac9); /* Updated to gradient */
+    color: white;
+    padding: 50px 0; /* Added padding to give space */
+}
+
+.service-box {
+    background-color: #3e4a5a; /* Keep box color distinct from background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px; /* Fixed height */
+    width: 300px; /* Increased width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 15px; /* Margin around each box for spacing */
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: center; /* Center text */
+}
+
+.service-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #d1d1d1;
+    max-height: 60px; /* Limit height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center; /* Center text */
+}
+
+.service-box img {
+    border: 5px solid #ffffff;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 50%; /* Keep the images rounded */
+    margin-bottom: 15px; /* Spacing below the image */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+{% endblock %}
+
+{% block content %}
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">My Professional Services</h2>
+        <div class="row justify-content-center"> <!-- Center the row content -->
+            <!-- Service 1 -->
+            <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
+                <div class="service-box">
+                    <img src="/static/images/web-design.webp" alt="Web Design">
+                    <h4>Website designing & development</h4>
+                    <p>Crafting responsive, user-focused websites that merge aesthetics with seamless functionality.</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
+                <div class="service-box">
+                    <img src="/static/images/Graphic designing.webp" alt="Graphic Designing">
+                    <h4>Graphic designing</h4>
+                    <p>Bringing ideas to life with bold, creative visuals that leave a lasting impression.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
+                <div class="service-box">
+                    <img src="/static/images/Digital Marketing.webp" alt="Digital Marketing">
+                    <h4>Digital Marketing</h4>
+                    <p>Driving engagement and growth through tailored strategies that reach the right audience.</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
+                <div class="service-box">
+                    <img src="/static/images/Professional social media Video editing.webp" alt="Video Editing">
+                    <h4>Professional social media Video editing</h4>
+                    <p>Creating dynamic, captivating videos that boost visibility and connect with your audience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

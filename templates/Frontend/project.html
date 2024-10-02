@@ -1,0 +1,92 @@
+{% extends "frontend/layout/base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block style %}
+    body {
+        background: linear-gradient(to right, #0047ab, #824ac9);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover; /* Ensures the image is cropped to fit the box */
+    }
+
+    .card {
+        height: 100%;
+        background-color: #3d3a3a;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures content is evenly spaced */
+        min-height: 150px; /* Set a minimum height for the card body */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Adjust the title size */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Adjust the description size */
+        max-height: 70px; /* Set a max height for the description */
+        overflow: hidden; /* Hide overflow text */
+        text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+        display: -webkit-box; /* For WebKit browsers */
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        -webkit-box-orient: vertical; /* Set the box orientation */
+    }
+
+    .btn-equal {
+        margin-top: auto; /* Push the button to the bottom */
+    }
+
+    /* Add this to create a placeholder for missing images */
+    .card-no-image {
+        height: 200px; /* Fixed height for cards with no images */
+        background-color: #e0e0e0; /* Light gray background as a placeholder */
+        display: flex;
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+    }
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center mb-5 text-white">Accomplished Initiatives</h2>
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow border-0 h-100">
+                {% if project.mage %}
+                    <img src="{{ project.mage.url }}" alt="{{ project.title }} image" class="card-img-top">
+                {% else %}
+                    <div class="card-no-image">
+                        <p>No image available</p>
+                    </div>
+                {% endif %}
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">{{ project.title }}</h5>
+                    <p class="card-text text-light">
+                        {% if project.description %}
+                            {{ project.description }}
+                        {% else %}
+                            <span class="text-muted">Description not available</span>
+                        {% endif %}
+                    </p>
+                    {% if project.link %}
+                        <a href="{{ project.link }}" class="btn btn-primary btn-equal download-link mb-2" target="_blank">Project Link</a>
+                    {% else %}
+                        <span class="text-muted">Project link not available</span>
+                    {% endif %}
+                    <a href="{% url 'project_detail' project.id %}" class="btn btn-secondary btn-equal mb-2">Project Detail</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "frontend/layout/base.html" %}
+
+{% block title %}Project Detail{% endblock %}
+
+{% block style %}
+body {
+    background: linear-gradient(to right, #0047ab, #824ac9);
+}
+
+.card {
+    background-color: #3d3a3a;
+    color: white; /* Ensure text is visible against the dark background */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #0f51af;
+    color: white;
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Light background for the footer */
+}
+
+.btn-primary {
+    background-color: #824ac9; /* Custom color for the primary button */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Default secondary color */
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.9; /* Slightly transparent on hover for visual feedback */
+}
+
+.fixed-image {
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow border-0">
+                <div class="card-header text-center">
+                    <h2 class="mb-0">{{ project.title }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if project.mage %}
+                        <img src="{{ project.mage.url }}" alt="{{ project.title }} image" class="img-fluid mb-4 fixed-image">
+                    {% else %}
+                        <div class="alert alert-warning" role="alert">
+                            No image available
+                        </div>
+                    {% endif %}
+                    <p class="lead">{{ project.description }}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="{% url 'projects' %}" class="btn btn-secondary">Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

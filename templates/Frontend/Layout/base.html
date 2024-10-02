@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site_Title{% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>{% block style %}   {% endblock %}</style>
+</head>
+<body>
+<!-- Navbar -->
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: royalblue; padding: 10px 0;">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" style="height: 35px; width: 35px; border-radius: 50%;">
+        </a>
+
+        <!-- Navbar Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-center text-uppercase" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="{% url 'index' %}" id="link-home" style="font-size: 0.9rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="{% url 'about' %}" id="link-about" style="font-size: 0.9rem;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="{% url 'services' %}" id="link-services" style="font-size: 0.9rem;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="{% url 'skill' %}" id="link-skills" style="font-size: 0.9rem;">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white mx-2" href="{% url 'projects' %}" id="link-projects" style="font-size: 0.9rem;">Projects</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Email with Icon in the Right Corner -->
+        <div class="d-none d-lg-block">
+            <a href="mailto:abishekkws521@gmail.com" class="text-white" style="font-size: 1rem;">
+                <i class="fas fa-envelope"></i> abishekkws521@gmail.com
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar end -->
+
+
+
+<div style="padding-top: 50px;">
+    {% block content %}
+    <!-- specific block of content goes here -->
+    {% endblock %}
+
+<!-- Footer -->
+<footer class="bg-primary text-light fw-bold pt-3 royal-blue-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3"> 
+                <div class="col-12 text-start py-3">
+                    <p class="mb-0">Copyright &copy; <span id="currentYear"></span> Abishek Khawas</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3"> 
+                <h5>Contact Me</h5>
+                <p>
+                    <i class="fas fa-phone fa-lg"></i> (+977) 9817381233<br>
+                    <i class="fas fa-envelope fa-lg"></i> abishekkws521@gmail.com
+                </p>
+            </div>
+            <div class="col-md-4 mb-3"> 
+                <h5>Follow Me</h5>
+                <a href="https://www.facebook.com/abhishek.khawas.963" target="_blank" class="text-white me-2 p-1"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://www.instagram.com/abishekkws521?igsh=ODhwdHl3NWk3dTAx" target="_blank" class="text-white me-2 p-1"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/abishek-kws-950a43275" target="_blank" class="text-white me-2 p-1"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="https://github.com/AbishekKws" target="_blank" class="text-white me-2 p-1"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    // Set the year in the copyright span
+    document.getElementById('currentYear').textContent = currentYear;
+</script>
+
+<!-- Bootstrap and JS scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

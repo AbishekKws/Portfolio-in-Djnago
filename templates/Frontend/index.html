@@ -1,0 +1,223 @@
+{% extends "frontend/layout/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block style %}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#home {
+    background: linear-gradient(to right, #0047ab, #164f9f, #6e2dc3, #824ac9);
+    color: white;
+    padding: 0;
+    position: relative;
+    height: 80vh; /* Set fixed height */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#home .content {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%; /* Full height */
+}
+
+#home .text-content {
+    flex: 2; /* 2/3 of the screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+    text-align: center; /* Center the text itself */
+    padding: 20px;
+}
+
+#home h1, #home h3, #home p {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(20, end) 0.5s 1 normal both;
+}
+
+#home h1 {
+    color: #38e5a2;
+}
+
+#home h3 {
+    color: #ed2b4e;
+    animation: typewriter 2.5s steps(30, end) 2.5s 1 normal both; /* Adjusted timing for h3 */
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: white;
+    animation: fadeInText 1s ease-in-out 6s forwards;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home .profile-img-wrapper {
+    flex: 1; /* 1/3 of the screen */
+    display: inline-block;
+    overflow: hidden; /* Prevent overflow of images */
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent overlay to blend */
+    position: relative;
+    height: 100%; /* Full height */
+}
+
+#home .profile-img-wrapper .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home .carousel-control-prev, 
+#home .carousel-control-next {
+    width: 10%;
+}
+
+#home .profile-img-wrapper .carousel-item img {
+    box-shadow: none;
+}
+
+#home .carousel-indicators {
+    bottom: -20px; 
+}
+
+#home .btn-contact {
+    background-color: #16b7b4;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    max-width: 300px; /* Set a max width for larger screens */
+    text-align: center;
+}
+
+#home .btn-contact:hover {
+    background-color: #0591a7;
+}
+
+@media (max-width: 1200px) {
+    #home {
+        height: 60vh; /* Decrease height for medium screens */
+    }
+    #home h1, #home h3 {
+        font-size: 2rem;
+    }
+    #home p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 50vh; /* Decrease height for small screens */
+        flex-direction: column;
+        text-align: center;
+    }
+    #home .text-content {
+        margin-bottom: 20px;
+    }
+    #home h1, #home h3 {
+        font-size: 1.5rem;
+    }
+    #home p {
+        font-size: 0.9rem;
+    }
+    #home .profile-img-wrapper {
+        width: 100%;
+        height: 100%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        height: 55vh; /* Further decrease height for smallest screens */
+    }
+    #home h1, #home h3 {
+        font-size: 1.2rem;
+    }
+    #home p {
+        font-size: 0.8rem;
+    }
+}
+{% endblock %}
+
+{% block content %}
+<!-- Home -->
+<section id="home">
+    <div class="content">
+        <div class="text-content">
+            <h1>Hi There,</h1>
+            <h3>I’m Abishek Khawas</h3>
+            <p>I'M A CREATIVE WEBSITE DESIGNER & DEVELOPER</p>
+            <a href="tel:+9779817381233" class="btn-contact">Call Now</a>
+        </div>
+        <div class="profile-img-wrapper">
+            <!-- Carousel inside profile-img-wrapper -->
+            <div id="profileCarousel" class="carousel slide" data-ride="carousel" data-interval="1200">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block profile-img" src="/static/images/carousel item 1.webp" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block profile-img" src="/static/images/carousel item 2.webp" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block profile-img" src="/static/images/carousel item 3.webp" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block profile-img" src="/static/images/carousel item 4.webp" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block profile-img" src="/static/images/carousel item 5.jpeg" alt="Fifth slide">
+                    </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#profileCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#profileCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home end -->
+{% endblock %}
